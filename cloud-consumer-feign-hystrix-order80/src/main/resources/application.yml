@@ -1,0 +1,20 @@
+server:
+  port: 80
+
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+
+# 配置feign启用hystrix，默认不启用
+# 启用后，会将@FeignClient标记的那个service接口下所有的方法进行了hystrix包装（类似于在这些方法上加了一个@HystrixCommand），
+# 这些方法会应用一个默认为1s的超时时间，controller上3秒超时时间就没有效果了
+feign:
+  hystrix:
+    enabled: true
+
+# 设置ribbon的请求连接时间和请求超时时间
+ribbon:
+  ConnectTimeout: 5000 # 请求连接的超时时间
+  ReadTimeout: 5000 # 请求处理的超时时间

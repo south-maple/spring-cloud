@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: consul-consumer-controller
+    name: consul-order-service
   # consul注册中心地址
   cloud:
     consul:

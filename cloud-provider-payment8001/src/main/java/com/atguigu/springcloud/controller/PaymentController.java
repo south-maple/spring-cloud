@@ -26,15 +26,17 @@ import static com.atguigu.springcloud.entity.CommonResult.success;
 @RestController
 @RequestMapping("/payment")
 public class PaymentController {
-    /**
-     * 服务对象
-     */
     @Resource
     private PaymentService paymentService;
     @Value("${server.port}")
     private String serverPort;
     @Resource
     private DiscoveryClient discoveryClient;
+
+    @GetMapping("/zipkin")
+    public String paymentZipkin() {
+        return "hi, I am paymentzipkin server fall back, welcome to atguigu, O(∩_∩)O哈哈~";
+    }
 
     @GetMapping("/timeout")
     public String timeout() {

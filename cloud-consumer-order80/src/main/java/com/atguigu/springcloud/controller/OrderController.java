@@ -35,6 +35,11 @@ public class OrderController {
     @Resource
     private DiscoveryClient discoveryClient;
 
+    @GetMapping("/payment/zipkin")
+    public String paymentZipkin() {
+        return restTemplate.getForObject(PAYMENT_URL + "/payment/zipkin", String.class);
+    }
+
     @GetMapping("/payment/lb")
     public String testMyLB() {
         List<ServiceInstance> instanceList = discoveryClient.getInstances("CLOUD-PAYMENT-SERVICE");

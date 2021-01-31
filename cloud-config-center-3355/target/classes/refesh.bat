@@ -1,0 +1,1 @@
+curl -X POST "http://localhost:3355/actuator/refresh"

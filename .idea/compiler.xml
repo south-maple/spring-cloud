@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -17,6 +18,8 @@
         <module name="cloud-consumerzk-order80" />
         <module name="cloud-consumer-hystrix-dashboard9001" />
         <module name="cloud-consumerconsul-order80" />
+        <module name="cloud-config-center-3344" />
+        <module name="cloud-config-center-3355" />
         <module name="cloud-gateway-gateway9527" />
         <module name="cloud-provider-hystrix-payment8001" />
         <module name="cloud-consumer-order80" />
@@ -25,6 +28,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="cloud-api-common" target="1.8" />
+      <module name="cloud-config-center-3344" target="1.8" />
+      <module name="cloud-config-center-3355" target="1.8" />
       <module name="cloud-consumer-feign-hystrix-order80" target="1.8" />
       <module name="cloud-consumer-feign-order80" target="1.8" />
       <module name="cloud-consumer-hystrix-dashboard9001" target="1.8" />

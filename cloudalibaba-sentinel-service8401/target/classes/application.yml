@@ -1,5 +1,6 @@
 server:
   port: 8401
+
 spring:
   application:
     name: cloudalibaba-sentinel-service

@@ -11,11 +11,11 @@ import static com.atguigu.springcloud.entity.CommonResult.success;
  */
 public class CustomerBlockHandler {
 
-    public static CommonResult handlerException1(BlockException e) {
-        return success("按客户自定义1，global handler exception");
+    public static CommonResult handlerException(BlockException exception) {
+        return new CommonResult(444, "按客户自定义,global handlerException----------1");
     }
 
-    public static CommonResult handlerException2(BlockException e) {
-        return success("按客户自定义2，global handler exception");
+    public static CommonResult handlerException2(BlockException exception) {
+        return new CommonResult(444, "按客户自定义2,global handlerException----------2");
     }
 }

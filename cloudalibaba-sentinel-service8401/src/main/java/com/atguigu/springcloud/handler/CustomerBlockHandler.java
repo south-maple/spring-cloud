@@ -3,8 +3,6 @@ package com.atguigu.springcloud.handler;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.atguigu.springcloud.entity.CommonResult;
 
-import static com.atguigu.springcloud.entity.CommonResult.success;
-
 /**
  * @author SouthMaple
  * @date 2021-02-03

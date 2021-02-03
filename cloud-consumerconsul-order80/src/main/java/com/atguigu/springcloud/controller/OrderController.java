@@ -1,4 +1,4 @@
-package springcloud.controller;
+package com.atguigu.springcloud.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
